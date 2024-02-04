@@ -138,12 +138,94 @@ Professional.destroy_all
 # new_professional.save
 
 # new_role = Role.new
-# new_role["character name"] = "Gary Oldman"
-# new_role["movie id"] =  Find""
+# new_role["character name"] = "Bruce Wayne"
+# new_role["movie id"] =  Find Batman Begins""
 # new_role["professional id"] = Find ""
 # new_role.save
 
+# new_role = Role.new
+# new_role["character name"] = "Bruce Wayne"
+# new_role["movie id"] =  Find Dark Knight""
+# new_role["professional id"] = Find ""
+# new_role.save
 
+# new_role = Role.new
+# new_role["character name"] = "Bruce Wayne"
+# new_role["movie id"] =  Find Dark Knight Rises""
+# new_role["professional id"] = Find ""
+# new_role.save
+
+# new_role = Role.new
+# new_role["character name"] = "Alfred"
+# new_role["movie id"] =  Find Batman Begins""
+# new_role["professional id"] = Find ""
+# new_role.save
+
+# new_role = Role.new
+# new_role["character name"] = "Alfred"
+# new_role["movie id"] =  Find Dark Knight""
+# new_role["professional id"] = Find ""
+# new_role.save
+
+# new_role = Role.new
+# new_role["character name"] = "Rachel Dawes"
+# new_role["movie id"] =  Find Batman Begins""
+# new_role["professional id"] = Find ""
+# new_role.save
+
+# new_role = Role.new
+# new_role["character name"] = "Rachel Dawes"
+# new_role["movie id"] =  Find Dark Knight""
+# new_role["professional id"] = Find ""
+# new_role.save
+
+# new_role = Role.new
+# new_role["character name"] = "Commissioner Gordon"
+# new_role["movie id"] =  Find Batman Begins""
+# new_role["professional id"] = Find ""
+# new_role.save
+
+# new_role = Role.new
+# new_role["character name"] = "Commissioner Gordon"
+# new_role["movie id"] =  Find Dark Knight Rises""
+# new_role["professional id"] = Find ""
+# new_role.save
+
+# new_role = Role.new
+# new_role["character name"] = "Ra's Al Ghul"
+# new_role["movie id"] =  Find Batman Begins""
+# new_role["professional id"] = Find ""
+# new_role.save
+
+# new_role = Role.new
+# new_role["character name"] = "Joker"
+# new_role["movie id"] =  Find Dark Knight""
+# new_role["professional id"] = Find ""
+# new_role.save
+
+# new_role = Role.new
+# new_role["character name"] = "Harvey Dent"
+# new_role["movie id"] =  Find Dark Knight""
+# new_role["professional id"] = Find ""
+# new_role.save
+
+# new_role = Role.new
+# new_role["character name"] = "Bane"
+# new_role["movie id"] =  Find Dark Knight Rises""
+# new_role["professional id"] = Find ""
+# new_role.save
+
+# new_role = Role.new
+# new_role["character name"] = "John Blake"
+# new_role["movie id"] =  Find Dark Knight Rises""
+# new_role["professional id"] = Find ""
+# new_role.save
+
+# new_role = Role.new
+# new_role["character name"] = "Selina Kyle"
+# new_role["movie id"] =  Find Dark Knight Rises""
+# new_role["professional id"] = Find ""
+# new_role.save
 
 # Prints a header for the movies output
 puts "Movies"
