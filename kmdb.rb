@@ -48,6 +48,9 @@
 # The Dark Knight        2008           PG-13  Warner Bros.
 # The Dark Knight Rises  2012           PG-13  Warner Bros.
 
+for m in Movie
+    puts movie 
+
 # Top Cast
 # ========
 
@@ -82,12 +85,19 @@ Professional.destroy_all
 # Do not use hard-coded foreign key IDs.
 # TODO!
 
+# new_studio = Studio.new
+# new_studio["name"] = "Warner Bros."
+
 # new_movie = Movie.new
 # new_movie["title"] = "Batman Begins"
 # new_movie["year released"] = "2005"
 # new_movie["rated"] = "PG-13"
-# new_movie["studio id"] = "https://www.apple.com"
+# new_movie["studio id"] = studiolink[primary key]
 # new_movie.save
+
+studiolink = Studio.find_by({"name"=>"Warner Bros."})[0]
+
+puts studio["url"] = "https://ww.amazon.com"
 
 # new_movie = Movie.new
 # new_movie["title"] = "The Dark Knight"
