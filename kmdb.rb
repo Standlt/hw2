@@ -48,8 +48,7 @@
 # The Dark Knight        2008           PG-13  Warner Bros.
 # The Dark Knight Rises  2012           PG-13  Warner Bros.
 
-for m in Movie
-    puts movie 
+
 
 # Top Cast
 # ========
@@ -85,157 +84,163 @@ Professional.destroy_all
 # Do not use hard-coded foreign key IDs.
 # TODO!
 
-# new_studio = Studio.new
-# new_studio["name"] = "Warner Bros."
+new_studio1 = Studio.new
+new_studio1["name"] = "Warner Bros."
 
-# new_movie = Movie.new
-# new_movie["title"] = "Batman Begins"
-# new_movie["year released"] = "2005"
-# new_movie["rated"] = "PG-13"
-# new_movie["studio id"] = studiolink[primary key]
-# new_movie.save
+new_movie1 = Movie.new
+new_movie1["title"] = "Batman Begins"
+new_movie1["year released"] = "2005"
+new_movie1["rated"] = "PG-13"
+new_movie1["studio id"] = new_studio1["id"]
+new_movie1.save
 
-studiolink = Studio.find_by({"name"=>"Warner Bros."})[0]
+new_movie2 = Movie.new
+new_movie2["title"] = "The Dark Knight"
+new_movie2["year released"] = "2008"
+new_movie2["rated"] = "PG-13"
+new_movie2["studio id"] = new_studio1["id"]
+new_movie2.save
 
-puts studio["url"] = "https://ww.amazon.com"
+new_movie3 = Movie.new
+new_movie3["title"] = "The Dark Knight Rises"
+new_movie3["year released"] = "2012"
+new_movie3["rated"] = "PG-13"
+new_movie3["studio id"] = new_studio1["id"]
+new_movie3.save
 
-# new_movie = Movie.new
-# new_movie["title"] = "The Dark Knight"
-# new_movie["year released"] = "2008"
-# new_movie["rated"] = "PG-13"
-# new_movie["studio id"] = "https://www.apple.com"
-# new_movie.save
+new_professional1 = Professional.new
+new_professional1["name"] = "Christian Bale"
+new_professional1.save
 
-# new_movie = Movie.new
-# new_movie["title"] = "The Dark Knight Rises"
-# new_movie["year released"] = "2012"
-# new_movie["rated"] = "PG-13"
-# new_movie["studio id"] = "https://www.apple.com"
-# new_movie.save
+new_professional2 = Professional.new
+new_professional2["name"] = "Michael Caine"
+new_professional2.save
 
-# new_professional = Professional.new
-# new_professional["name"] = "Christian Bale"
-# new_professional.save
-# new_professional = Professional.new
-# new_professional["name"] = "Michael Caine"
-# new_professional.save
-# new_professional = Professional.new
-# new_professional["name"] = "Liam Neeson"
-# new_professional.save
-# new_professional = Professional.new
-# new_professional["name"] = "Katie Holmes"
-# new_professional.save
-# new_professional = Professional.new
-# new_professional["name"] = "Gary Oldman"
-# new_professional.save
-# new_professional = Professional.new
-# new_professional["name"] = "Heath Ledger"
-# new_professional.save
-# new_professional = Professional.new
-# new_professional["name"] = "Aaron Eckhart"
-# new_professional.save
-# new_professional = Professional.new
-# new_professional["name"] = "Maggie Gyllenhaal"
-# new_professional.save
-# new_professional = Professional.new
-# new_professional["name"] = "Tom Hardy"
-# new_professional.save
-# new_professional = Professional.new
-# new_professional["name"] = "Joseph Gordon-Levitt"
-# new_professional.save
-# new_professional = Professional.new
-# new_professional["name"] = "Anne Hathaway"
-# new_professional.save
+new_professional3 = Professional.new
+new_professional3["name"] = "Liam Neeson"
+new_professional3.save
 
-# new_role = Role.new
-# new_role["character name"] = "Bruce Wayne"
-# new_role["movie id"] =  Find Batman Begins""
-# new_role["professional id"] = Find ""
-# new_role.save
+new_professional4 = Professional.new
+new_professional4["name"] = "Katie Holmes"
+new_professional4.save
 
-# new_role = Role.new
-# new_role["character name"] = "Bruce Wayne"
-# new_role["movie id"] =  Find Dark Knight""
-# new_role["professional id"] = Find ""
-# new_role.save
+new_professional5 = Professional.new
+new_professional5["name"] = "Gary Oldman"
+new_professional5.save
 
-# new_role = Role.new
-# new_role["character name"] = "Bruce Wayne"
-# new_role["movie id"] =  Find Dark Knight Rises""
-# new_role["professional id"] = Find ""
-# new_role.save
+new_professional6 = Professional.new
+new_professional6["name"] = "Heath Ledger"
+new_professional6.save
 
-# new_role = Role.new
-# new_role["character name"] = "Alfred"
-# new_role["movie id"] =  Find Batman Begins""
-# new_role["professional id"] = Find ""
-# new_role.save
+new_professional7 = Professional.new
+new_professional7["name"] = "Aaron Eckhart"
+new_professional7.save
 
-# new_role = Role.new
-# new_role["character name"] = "Alfred"
-# new_role["movie id"] =  Find Dark Knight""
-# new_role["professional id"] = Find ""
-# new_role.save
+new_professional8 = Professional.new
+new_professional8["name"] = "Maggie Gyllenhaal"
+new_professional8.save
 
-# new_role = Role.new
-# new_role["character name"] = "Rachel Dawes"
-# new_role["movie id"] =  Find Batman Begins""
-# new_role["professional id"] = Find ""
-# new_role.save
+new_professional9 = Professional.new
+new_professional9["name"] = "Tom Hardy"
+new_professional9.save
 
-# new_role = Role.new
-# new_role["character name"] = "Rachel Dawes"
-# new_role["movie id"] =  Find Dark Knight""
-# new_role["professional id"] = Find ""
-# new_role.save
+new_professional10 = Professional.new
+new_professional10["name"] = "Joseph Gordon-Levitt"
+new_professional10.save
 
-# new_role = Role.new
-# new_role["character name"] = "Commissioner Gordon"
-# new_role["movie id"] =  Find Batman Begins""
-# new_role["professional id"] = Find ""
-# new_role.save
+new_professional11 = Professional.new
+new_professional11["name"] = "Anne Hathaway"
+new_professional11.save
 
-# new_role = Role.new
-# new_role["character name"] = "Commissioner Gordon"
-# new_role["movie id"] =  Find Dark Knight Rises""
-# new_role["professional id"] = Find ""
-# new_role.save
+new_role1 = Role.new
+new_role1["character name"] = "Bruce Wayne"
+new_role1["movie id"] =  new_movie1["id"]
+new_role1["professional id"] = new_professional1["id"]
+new_role1.save
 
-# new_role = Role.new
-# new_role["character name"] = "Ra's Al Ghul"
-# new_role["movie id"] =  Find Batman Begins""
-# new_role["professional id"] = Find ""
-# new_role.save
+new_role2 = Role.new
+new_role2["character name"] = "Bruce Wayne"
+new_role2["movie id"] =  new_movie2["id"]
+new_role2["professional id"] = new_professional1["id"]
+new_role2.save
 
-# new_role = Role.new
-# new_role["character name"] = "Joker"
-# new_role["movie id"] =  Find Dark Knight""
-# new_role["professional id"] = Find ""
-# new_role.save
+new_role3 = Role.new
+new_role3["character name"] = "Bruce Wayne"
+new_role3["movie id"] =  new_movie3["id"]
+new_role3["professional id"] = new_professional1["id"]
+new_role3.save
 
-# new_role = Role.new
-# new_role["character name"] = "Harvey Dent"
-# new_role["movie id"] =  Find Dark Knight""
-# new_role["professional id"] = Find ""
-# new_role.save
+new_role4 = Role.new
+new_role4["character name"] = "Alfred"
+new_role4["movie id"] =  new_movie1["id"]
+new_role4["professional id"] = new_professional2["id"]
+new_role4.save
 
-# new_role = Role.new
-# new_role["character name"] = "Bane"
-# new_role["movie id"] =  Find Dark Knight Rises""
-# new_role["professional id"] = Find ""
-# new_role.save
+new_role5 = Role.new
+new_role5["character name"] = "Alfred"
+new_role5["movie id"] =  new_movie2["id"]
+new_role5["professional id"] = new_professional2["id"]
+new_role5.save
 
-# new_role = Role.new
-# new_role["character name"] = "John Blake"
-# new_role["movie id"] =  Find Dark Knight Rises""
-# new_role["professional id"] = Find ""
-# new_role.save
+new_role6 = Role.new
+new_role6["character name"] = "Rachel Dawes"
+new_role6["movie id"] =  new_movie1["id"]
+new_role6["professional id"] = new_professional4["id"]
+new_role6.save
 
-# new_role = Role.new
-# new_role["character name"] = "Selina Kyle"
-# new_role["movie id"] =  Find Dark Knight Rises""
-# new_role["professional id"] = Find ""
-# new_role.save
+new_role7 = Role.new
+new_role7["character name"] = "Rachel Dawes"
+new_role7["movie id"] =  new_movie2["id"]
+new_role7["professional id"] = new_professional4["id"]
+new_role7.save
+
+new_role8 = Role.new
+new_role8["character name"] = "Commissioner Gordon"
+new_role8["movie id"] =  new_movie1["id"]
+new_role8["professional id"] = new_professional5["id"]
+new_role8.save
+
+new_role9 = Role.new
+new_role9["character name"] = "Commissioner Gordon"
+new_role9["movie id"] =  new_movie3["id"]
+new_role9["professional id"] = new_professional5["id"]
+new_role9.save
+
+new_role10 = Role.new
+new_role10["character name"] = "Ra's Al Ghul"
+new_role10["movie id"] =  new_movie1["id"]
+new_role10["professional id"] = new_professional3["id"]
+new_role10.save
+
+new_role11 = Role.new
+new_role11["character name"] = "Joker"
+new_role11["movie id"] =  new_movie2["id"]
+new_role11["professional id"] = new_professional6["id"]
+new_role11.save
+
+new_role12 = Role.new
+new_role12["character name"] = "Harvey Dent"
+new_role12["movie id"] =  new_movie2["id"]
+new_role12["professional id"] = new_professional7["id"]
+new_role12.save
+
+new_role13 = Role.new
+new_role13["character name"] = "Bane"
+new_role13["movie id"] =  new_movie3["id"]
+new_role13["professional id"] = new_professional9["id"]
+new_role13.save
+
+new_role14 = Role.new
+new_role14["character name"] = "John Blake"
+new_role14["movie id"] =  new_movie3["id"]
+new_role14["professional id"] = new_professional10["id"]
+new_role14.save
+
+new_role15 = Role.new
+new_role15["character name"] = "Selina Kyle"
+new_role15["movie id"] =  new_movie3["id"]
+new_role15["professional id"] = new_professional11["id"]
+new_role15.save
 
 # Prints a header for the movies output
 puts "Movies"
