@@ -70,13 +70,80 @@
 # Delete existing data, so you'll start fresh each time this script is run.
 # Use `Model.destroy_all` code.
 # TODO!
-
+Movie.destroy_all
+Role.destroy_all
+Studio.destroy_all
+Professional.destroy_all
 # Generate models and tables, according to the domain model.
 # TODO!
+# check for unique identifiers & keys
 
 # Insert data into the database that reflects the sample data shown above.
 # Do not use hard-coded foreign key IDs.
 # TODO!
+
+# new_movie = Movie.new
+# new_movie["title"] = "Batman Begins"
+# new_movie["year released"] = "2005"
+# new_movie["rated"] = "PG-13"
+# new_movie["studio id"] = "https://www.apple.com"
+# new_movie.save
+
+# new_movie = Movie.new
+# new_movie["title"] = "The Dark Knight"
+# new_movie["year released"] = "2008"
+# new_movie["rated"] = "PG-13"
+# new_movie["studio id"] = "https://www.apple.com"
+# new_movie.save
+
+# new_movie = Movie.new
+# new_movie["title"] = "The Dark Knight Rises"
+# new_movie["year released"] = "2012"
+# new_movie["rated"] = "PG-13"
+# new_movie["studio id"] = "https://www.apple.com"
+# new_movie.save
+
+# new_professional = Professional.new
+# new_professional["name"] = "Christian Bale"
+# new_professional.save
+# new_professional = Professional.new
+# new_professional["name"] = "Michael Caine"
+# new_professional.save
+# new_professional = Professional.new
+# new_professional["name"] = "Liam Neeson"
+# new_professional.save
+# new_professional = Professional.new
+# new_professional["name"] = "Katie Holmes"
+# new_professional.save
+# new_professional = Professional.new
+# new_professional["name"] = "Gary Oldman"
+# new_professional.save
+# new_professional = Professional.new
+# new_professional["name"] = "Heath Ledger"
+# new_professional.save
+# new_professional = Professional.new
+# new_professional["name"] = "Aaron Eckhart"
+# new_professional.save
+# new_professional = Professional.new
+# new_professional["name"] = "Maggie Gyllenhaal"
+# new_professional.save
+# new_professional = Professional.new
+# new_professional["name"] = "Tom Hardy"
+# new_professional.save
+# new_professional = Professional.new
+# new_professional["name"] = "Joseph Gordon-Levitt"
+# new_professional.save
+# new_professional = Professional.new
+# new_professional["name"] = "Anne Hathaway"
+# new_professional.save
+
+# new_role = Role.new
+# new_role["character name"] = "Gary Oldman"
+# new_role["movie id"] =  Find""
+# new_role["professional id"] = Find ""
+# new_role.save
+
+
 
 # Prints a header for the movies output
 puts "Movies"
