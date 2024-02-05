@@ -13,9 +13,9 @@
 ActiveRecord::Schema[7.1].define(version: 2024_02_04_171452) do
   create_table "movies", force: :cascade do |t|
     t.string "title"
-    t.string "year released"
+    t.string "year_released"
     t.string "rated"
-    t.integer "studio id"
+    t.integer "studio_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -27,9 +27,9 @@ ActiveRecord::Schema[7.1].define(version: 2024_02_04_171452) do
   end
 
   create_table "roles", force: :cascade do |t|
-    t.string "character name"
-    t.integer "movie id"
-    t.integer "professional id"
+    t.string "character_name"
+    t.integer "movie_id"
+    t.integer "professional_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
